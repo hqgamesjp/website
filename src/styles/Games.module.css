@@ -1,0 +1,50 @@
+.Modal__Wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  width: 90vw;
+  max-width: 1800px;
+  height: 90vh;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  z-index: 30;
+}
+
+@media (min-width: 768px) {
+  .Modal__Wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    width: 80vw;
+    max-width: 1800px;
+    height: 80vh;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    z-index: 30;
+  }
+}
+
+.PrevButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+}
+
+.ThumbnailActive {
+  border: 2px solid black;
+  border-radius: 10px;
+}

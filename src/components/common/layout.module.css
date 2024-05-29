@@ -1,0 +1,131 @@
+.Header {
+  width: 100%;
+  background-color: rgb(179, 208, 206);
+  /* background-color: rgb(222, 212, 187); */
+}
+
+
+/* 
+.Header__Top {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 140px;
+} */
+
+.Header__Top__Logo {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 16px;
+  transition: 0.3s;
+  width: 320px;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+.Header__Top__LogoWide {
+  display: none;
+  position: relative;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.3s;
+  width: 122px;
+  height: 100px;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+.Header__Top__Logo__Mini {
+  position: relative;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.3s;
+  width: 61px;
+  height: 50px;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+@media screen and (max-width: 639px) {
+  .Header__Top__Logo {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+  }
+  .Header__Top__LogoWide {
+    display: block;
+    position: relative;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s;
+    width: 90%;
+    max-width: 400px;
+    height: 100px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+  }
+  .Header__Top__Logo__Mini {
+    position: relative;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s;
+    width: 61px;
+    height: 50px;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+  }
+}
+
+.Header__Top__Logo:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+
+/* 
+.Header__Top__Title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: block;
+} */
+
+
+/* .Header__Bottom {
+  background-color: lightblue;
+} */
+
+.Header__Menu__Item {
+  transition: 0.3s;
+  /* text-align: center; */
+  width: 25%;
+  line-height: 70px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.Header__Menu__Item:hover {
+  background-color: #9ca3af;
+  color: white;
+}
+
+.Main {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.Main__Container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: white;
+}

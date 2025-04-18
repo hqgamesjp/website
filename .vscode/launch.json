@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Next.js: Server",
+      "skipFiles": ["<node_internals>/**"],
+      "port": 9229,
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "!**/node_modules/**"
+      ]
+      // npm run devが実行されている状態でデバッグモード開始
+    },
+    
+    {
+        // client side debug
+        "type": "pwa-chrome",
+        "request": "launch",
+        "name": "Nextjs: Client",
+        "url": "http://localhost:3000",
+        "webRoot": "${workspaceFolder}/frontend"
+    }
+  ]
+}
